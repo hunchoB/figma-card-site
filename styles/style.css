@@ -105,58 +105,34 @@ body {
 	flex: 1 1 auto;
 }
 
-.hi {}
+.hi {
+	background-color: white;
+	/* background-color:yellow; */
+	padding: 30px 0;
+}
 
 .container {
 	max-width: 65.74%;
 	margin: 0 auto;
 }
 
-.hi_box {}
+.hi_box {
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
 
-.hi_navigation {}
+.hi_navigation {
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+	line-height: 22px;
+	color: #828282;
+	border-bottom: 1px solid #828282;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	padding-bottom: 32px;
 
-.home {}
-
-.about {}
-
-.skills {}
-
-.portfolio {}
-
-.contacts {}
-
-.hi_aboutme {}
-
-.my_name {}
-
-.short_info {}
-
-.language {}
-
-.myimage {}
-
-.footer {}
-
-.footer_box {}
-
-.contact_info {}
-
-.contact_links {}
-
-.contact_text {}
-
-.wrapper {}
-
-.content {}
-
-.hi {}
-
-.container {}
-
-.hi_box {}
-
-.hi_navigation {}
+}
 
 .home {}
 
@@ -168,15 +144,49 @@ body {
 
 .contacts {}
 
-.hi_aboutme {}
+.hi_aboutme {
+	display: flex;
+	padding: 50px 0 30px 0;
+	justify-content: space-between;
 
-.my_name {}
+}
 
-.short_info {}
+.my_name {
+	font-size: 40px;
+	line-height: 59px;
+	color: #070707;
 
-.language {}
+}
 
-.myimage {}
+.short_info {
+	font-size: 18px;
+	line-height: 22px;
+	color: #070707;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: -300px;
+}
+
+.language {
+	font-size: 16px;
+	line-height: 20px;
+	color: #828282;
+	transform: rotate(-90deg);
+	margin-right: -70px;
+}
+
+span.bold {
+	font-weight: bold;
+	color: #070707;
+}
+
+.myimage {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+
+}
 
 .footer {
 	background: white;
@@ -220,6 +230,10 @@ body {
 
 }
 
+.contact_button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 .contact_button a {
 	font-size: 18px;
 	line-height: 22px;
@@ -232,15 +246,16 @@ body {
 
 }
 
-.contact_links a{
+.contact_links a {
 	margin: 0 36px;
-	
+
 }
+
 .contact_text {
 	font-size: 14px;
 	line-height: 17px;
 	text-align: center;
 
 	color: #828282;
-	
+
 }
