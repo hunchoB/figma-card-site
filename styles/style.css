@@ -255,7 +255,46 @@ span.bold {
 	font-size: 14px;
 	line-height: 17px;
 	text-align: center;
-
 	color: #828282;
 
+}
+
+.container_allpage{
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.information {}
+
+.information_box {
+	display: flex;
+	background: #F6F6F6;
+	justify-content: center;
+	/* flex: 0 0; */
+}
+
+.information_body {}
+
+.information_title {
+	margin-top: 120px;
+	margin-bottom: 18px;
+}
+
+.title {
+	font-size: 34px;
+	line-height: 42px;
+	text-align: center;
+	color: #070707;
+}
+
+.information_text {
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #070707;
+	 margin-bottom: 107px;
+}
+
+.information_text p {
+	padding: 30px;
 }
