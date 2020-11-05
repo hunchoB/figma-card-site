@@ -8,21 +8,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- Реализация рейтинга звезд через font-awesome. Дальше реализовать на JS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Реализация рейтинга звезд через font-awesome. Дальше реализовать на JS -->
     <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="content">
+
             <div class="hi">
                 <div class="container">
                     <div class="hi_box">
                         <div class="hi_navigation">
-                            <nav class="home">Home</nav>
-                            <nav class="about">About me</nav>
-                            <nav class="skills">Skills</nav>
-                            <nav class="portfolio">Portfolio</nav>
-                            <nav class="contacts">Contacts</nav>
+                            <nav class="home">Домой</nav>
+                            <nav class="about">Обо мне</nav>
+                            <nav class="skills">Навыки</nav>
+                            <nav class="portfolio">Портфолио</nav>
+                            <nav class="contacts">Контакты</nav>
                         </div>
                         <div class="hi_aboutme">
                             <p class="my_name">Екатерина <br> Мирошниченко</p>
@@ -36,6 +40,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="information">
                 <div class="container_allpage">
                     <div class="information_box">
@@ -57,6 +62,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="skill">
                 <div class="container">
                     <div class="skill_box">
@@ -67,59 +73,143 @@
                             <p>Работаю в таких программах, как</p>
                         </div>
                         <div class="skill_items_box">
-                            
 
-                                <div class="skill_item1 items_column">
-                                    <div class="skill_item_image">
-                                        <img src="img/ps.jpg" width="81.76" height="81" alt="">
-                                    </div>
-                                    <div class="skill_item_subtitle">
-                                        <p>Adobe <br> Photoshop</p>
-                                    </div>
-                                    <div class="skill_item_rating">
-                                        Пять звезд
+
+                            <div class="skill_item1 items_column">
+                                <div class="skill_item_image">
+                                    <img src="img/ps.jpg" width="81.76" height="81" alt="">
+                                </div>
+                                <div class="skill_item_subtitle">
+                                    <p>Adobe <br> Photoshop</p>
+                                </div>
+                                <div class="skill_item_rating">
+                                    <div class="star-rating__wrap">
+                                        <input class="star-rating__input" id="star-rating-5" type="radio" name="rating"
+                                            value="5">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                                            title="5 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-4" type="radio" name="rating"
+                                            value="4">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                                            title="4 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-3" type="radio" name="rating"
+                                            value="3">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                                            title="3 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-2" type="radio" name="rating"
+                                            value="2">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                                            title="2 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-1" type="radio" name="rating"
+                                            value="1">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                                            title="1 out of 5 stars"></label>
                                     </div>
                                 </div>
-                                
-                                <div class="skill_item2 items_column">
-                                    <div class="skill_item_image">
-                                        <img src="img/ai.png" width="81.76" height="81" alt="">
-                                    </div>
-                                    <div class="skill_item_subtitle">
-                                        <p>Adobe <br>
-                                            Illustrator</p>
-                                    </div>
-                                    <div class="skill_item_rating">
-                                        Пять звезд
+                            </div>
+
+                            <div class="skill_item2 items_column">
+                                <div class="skill_item_image">
+                                    <img src="img/ai.png" width="81.76" height="81" alt="">
+                                </div>
+                                <div class="skill_item_subtitle">
+                                    <p>Adobe <br>
+                                        Illustrator</p>
+                                </div>
+                                <div class="skill_item_rating">
+                                    <div class="star-rating__wrap">
+                                        <input class="star-rating__input" id="star-rating-5" type="radio" name="rating"
+                                            value="5">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                                            title="5 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-4" type="radio" name="rating"
+                                            value="4">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                                            title="4 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-3" type="radio" name="rating"
+                                            value="3">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                                            title="3 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-2" type="radio" name="rating"
+                                            value="2">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                                            title="2 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-1" type="radio" name="rating"
+                                            value="1">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                                            title="1 out of 5 stars"></label>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="skill_item3 items_column">
-                                    <div class="skill_item_image">
-                                        <img src="img/ae.jpg" width="81.76" height="81" alt="">
-                                    </div>
-                                    <div class="skill_item_subtitle">
-                                        <p>Adobe <br>
-                                            After Effects</p>
-                                    </div>
-                                    <div class="skill_item_rating">
-                                        Пять звезд
+                            <div class="skill_item3 items_column">
+                                <div class="skill_item_image">
+                                    <img src="img/ae.jpg" width="81.76" height="81" alt="">
+                                </div>
+                                <div class="skill_item_subtitle">
+                                    <p>Adobe <br>
+                                        After Effects</p>
+                                </div>
+                                <div class="skill_item_rating">
+                                    <div class="star-rating__wrap">
+                                        <input class="star-rating__input" id="star-rating-5" type="radio" name="rating"
+                                            value="5">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                                            title="5 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-4" type="radio" name="rating"
+                                            value="4">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                                            title="4 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-3" type="radio" name="rating"
+                                            value="3">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                                            title="3 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-2" type="radio" name="rating"
+                                            value="2">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                                            title="2 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-1" type="radio" name="rating"
+                                            value="1">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                                            title="1 out of 5 stars"></label>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="skill_item4 items_column">
-                                    <div class="skill_item_image">
-                                        <img src="img/lr.png" width="81.76" height="81" alt="">
-                                    </div>
-                                    <div class="skill_item_subtitle">
-                                        <p>Adobe <br> Photoshop Lightroom</p>
-                                    </div>
-                                    <div class="skill_item_rating">
-                                        Пять звезд
+                            <div class="skill_item4 items_column">
+                                <div class="skill_item_image">
+                                    <img src="img/lr.png" width="81.76" height="81" alt="">
+                                </div>
+                                <div class="skill_item_subtitle">
+                                    <p>Adobe <br> Photoshop Lightroom</p>
+                                </div>
+                                <div class="skill_item_rating">
+                                    <div class="star-rating__wrap">
+                                        <input class="star-rating__input" id="star-rating-5" type="radio" name="rating"
+                                            value="5">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                                            title="5 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-4" type="radio" name="rating"
+                                            value="4">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                                            title="4 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-3" type="radio" name="rating"
+                                            value="3">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                                            title="3 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-2" type="radio" name="rating"
+                                            value="2">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                                            title="2 out of 5 stars"></label>
+                                        <input class="star-rating__input" id="star-rating-1" type="radio" name="rating"
+                                            value="1">
+                                        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                                            title="1 out of 5 stars"></label>
                                     </div>
                                 </div>
+                            </div>
 
-                            
+
                         </div>
                     </div>
                 </div>
@@ -153,6 +243,7 @@
                     </div>
                 </div>
             </footer>
+
         </div>
 </body>
 
