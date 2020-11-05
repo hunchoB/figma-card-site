@@ -195,8 +195,6 @@ span.bold {
 
 .footer_box {
 	display: flex;
-	height: 622px;
-	/* height: 622px; in the maket */
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -256,10 +254,11 @@ span.bold {
 	line-height: 17px;
 	text-align: center;
 	color: #828282;
+	margin: 0 0 123.19px 0;
 
 }
 
-.container_allpage{
+.container_allpage {
 	max-width: 100%;
 	margin: 0 auto;
 }
@@ -292,9 +291,61 @@ span.bold {
 	line-height: 22px;
 	text-align: center;
 	color: #070707;
-	 margin-bottom: 107px;
+	margin-bottom: 107px;
 }
 
 .information_text p {
 	padding: 30px;
 }
+
+.skill {}
+
+.skill_box {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+}
+
+.skill_title {
+	margin: 91px 0 69px 0;
+}
+
+.skill_sentence {
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	margin: 0 0 83.49px 0;
+}
+
+.skill_items_box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+
+.skill_item1 {}
+
+.skill_item_image {
+	margin: 0 0 23.03px 0;
+}
+
+.skill_item_subtitle {
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	margin: 0 0 40.41px 0;
+
+}
+
+.skill_item_rating {
+	text-align: center;
+	margin: 0 0 111.06px 0;
+}
+
+.skill_item2 {}
+
+.skill_item3 {}
+
+.skill_item4 {}
