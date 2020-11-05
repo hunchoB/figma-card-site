@@ -203,11 +203,7 @@ span.bold {
 .contact_info {}
 
 .contact_title {
-	font-size: 34px;
-	line-height: 42px;
-	text-align: center;
 	margin: 114px auto 20px auto;
-
 }
 
 .contact_sentence {
@@ -321,14 +317,18 @@ span.bold {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+
 }
 
+.items_column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
-
-.skill_item1 {}
+}
 
 .skill_item_image {
-	margin: 0 0 23.03px 0;
+	margin: 0 auto 23.03px auto;
 }
 
 .skill_item_subtitle {
@@ -343,6 +343,8 @@ span.bold {
 	text-align: center;
 	margin: 0 0 111.06px 0;
 }
+
+.skill_item1 {}
 
 .skill_item2 {}
 
